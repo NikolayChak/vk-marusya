@@ -1,0 +1,29 @@
+.about-list__item {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.elements__wrapper {
+  display: flex;
+  width: 26%;
+}
+
+.dash {
+  width: 100%;
+  border-bottom: 1px dashed var(--color-grey-tranp);
+}
+
+@media (max-width: 768px) {
+  .about-list__item {
+    flex-direction: column;
+    gap: 6px;
+    white-space: normal;
+  }
+
+  .elements__title {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-grey-tranp);
+  }
+}

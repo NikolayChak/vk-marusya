@@ -1,0 +1,16 @@
+.hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.extra-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(
+    178.73deg,
+    rgba(39, 135, 245, 0.18) -17.53%,
+    rgba(163, 147, 245, 0.18) 131.74%
+  );
+}

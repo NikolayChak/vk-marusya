@@ -1,0 +1,19 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.settings .btn {
+  width: max-content;
+}
+
+.account .container--set {
+  padding-top: 70px;
+}
+
+@media (max-width: 425px) {
+  .account .container--set {
+    padding-top: 47px;
+  }
+}

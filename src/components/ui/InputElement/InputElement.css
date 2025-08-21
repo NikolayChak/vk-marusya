@@ -1,0 +1,85 @@
+.inputs-login {
+  position: relative;
+  transition: border-color 0.3s ease-in-out;
+  margin-bottom: 12px;
+}
+
+.inputs-login:last-of-type {
+  margin-bottom: 20px;
+}
+
+.inputs-login__confirm {
+  margin-bottom: 20px;
+}
+
+.inputs-login::placeholder {
+  font-size: 18px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.mail-svg,
+.key-svg,
+.user-svg {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+}
+
+.inputs-login__field {
+  width: 100%;
+  padding: 16px 16px 16px 52px;
+  font-size: 18px;
+  line-height: 22px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.inputs-login__field:hover,
+.inputs-login__field:focus-visible {
+  border-color: var(--color-purple-focus);
+}
+
+.inputs-login svg path {
+  transition: fill 0.3s ease-in-out;
+}
+
+.inputs-login__fieldr + svg path {
+  transition: fill 0.3s ease-in-out;
+}
+
+.inputs-login__field:hover + svg path,
+.inputs-login__field:focus-visible + svg path {
+  fill: var(--color-purple-focus);
+}
+
+.inputs-login:hover svg path,
+.inputs-login:focus-visible svg path {
+  fill: var(--color-purple-focus);
+}
+
+.inputs-login--error {
+  border-color: var(--color-red-error);
+}
+
+.inputs-login--error + svg path {
+  fill: var(--color-red-error);
+}
+
+.inputs-text--error {
+  position: absolute;
+  top: -13px;
+  left: 0;
+  color: var(--color-red-error);
+  font-size: 10px;
+}
+
+@media (max-width: 575px) {
+  .inputs-text--error {
+    top: -11px;
+    font-size: 9px;
+  }
+}

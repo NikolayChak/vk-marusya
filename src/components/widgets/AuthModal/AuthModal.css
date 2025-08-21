@@ -1,0 +1,140 @@
+.backdrop {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+  opacity: 0;
+  animation: 500ms linear fadeIn forwards;
+}
+
+.login {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 0 100px;
+  padding: 64px 40px 48px 40px;
+  border-radius: 24px;
+  background-color: var(--color-white);
+  transform: translateY(100vh);
+  animation: 500ms ease-in-out slideUp forwards;
+}
+
+.login__succsess {
+  padding: 60px 40px 60px 40px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100vh);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+.login__img {
+  width: 156px;
+  height: 35px;
+  margin-bottom: 40px;
+}
+
+.login__succsess .login__img,
+.login__register .login__img {
+  width: 135px;
+}
+
+.login__form {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.login__btn {
+  width: 100%;
+}
+
+.login__btn:focus-visible {
+  border-color: var(--color-blue-disabled);
+}
+
+.login__title {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.btn--white {
+  background-color: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-black);
+}
+
+.btn__register {
+  width: 100%;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: var(--color-black);
+  transition: border-color 0.2s ease-in-out;
+}
+
+.btn__register:focus-visible,
+.btn__register:hover {
+  border-color: var(--color-blue-disabled);
+}
+
+.register--error {
+  text-align: center;
+  width: 100%;
+  transform: translateX(-50%);
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  color: var(--color-red-error);
+  font-size: 16px;
+}
+
+@media (max-width: 575px) {
+  .login {
+    margin: 0 20px;
+    padding: 64px 20px 20px 20px;
+  }
+
+  .login__form {
+    margin-bottom: 5px;
+  }
+
+  .login__close {
+    top: 8px;
+    right: 8px;
+  }
+
+  .login__img {
+    width: 130px;
+    height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .inputs-login:last-of-type {
+    margin-bottom: 25px;
+  }
+}

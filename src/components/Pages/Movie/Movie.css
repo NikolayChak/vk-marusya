@@ -1,0 +1,16 @@
+.about-film {
+  padding-top: 5px;
+  padding-bottom: 86px;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+
+@media (max-width: 768px) {
+  .about-list {
+    row-gap: 10px;
+  }
+}

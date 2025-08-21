@@ -1,0 +1,95 @@
+.header {
+  padding: 24px 0;
+}
+
+.header__wrap {
+  display: flex;
+  flex-basis: 72%;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+
+.header__container {
+  position: relative;
+  display: flex;
+  column-gap: 80px;
+  align-items: center;
+}
+
+.logo {
+  outline-offset: 10px;
+  transition: outline 0.3s ease-in-out;
+}
+
+.logo:focus-visible {
+  outline: 1px solid var(--color-purple-focus);
+}
+
+.logo__img {
+  width: 150px;
+  height: 35px;
+}
+
+.nav__list {
+  display: flex;
+  column-gap: 40px;
+}
+
+.menu-icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.menu-icon__item svg path {
+  transition: all 0.2s ease-in;
+}
+
+.menu-icon__item:hover svg path {
+  fill: var(--color-purple-focus);
+}
+
+.menu-icon + .backdrop {
+  align-items: flex-start;
+  padding: 16px 20px;
+  width: 100vw;
+}
+
+.backdrop__search .input-wrap {
+  flex-basis: 100%;
+}
+
+.backdrop__search .input {
+  padding: 17px 16px 15px 52px;
+}
+
+@media (max-width: 1024px) {
+  .header__container {
+    column-gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .menu-icon .user-svg,
+  .menu-icon .searchs {
+    position: static;
+    transform: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .header {
+    padding: 20px 0 8px;
+  }
+
+  .logo__img {
+    width: 80px;
+    height: 18px;
+  }
+}

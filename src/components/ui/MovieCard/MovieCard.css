@@ -1,0 +1,71 @@
+.cards-list__top {
+  position: relative;
+}
+
+.index {
+  position: absolute;
+  top: -12px;
+  left: -12px;
+  padding: 8px 24px;
+  border-radius: 50px;
+  color: var(--color-purple);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  background-color: var(--color-white);
+}
+
+.card-form__top {
+  border-radius: 16px;
+  transition: border 0.3s ease-in-out;
+  cursor: pointer;
+  transition: border 0.3s ease-in-out;
+}
+
+.card-form__top .card-list__img {
+  width: 222px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-form__link {
+  border-radius: 16px;
+  transition: border 0.3s ease-in-out;
+}
+
+.card-form__top:hover,
+.card-form__top:focus-visible,
+.card-form__link:hover,
+.card-form__link:focus-visible {
+  border: 1px solid var(--color-white);
+}
+
+.card-form__link:focus-visible + .account__close {
+  display: flex;
+  transform: scale(100%);
+}
+
+.card-list__error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 222px;
+  height: 100%;
+  color: var(--color-white);
+  font-size: 18px;
+}
+
+.cards-list__top--profile:hover .account__close,
+.cards-list__top--profile:focus-within .account__close {
+  display: flex;
+  transform: scale(100%);
+}
+
+.error-delete {
+  position: absolute;
+  content: '';
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-red);
+}

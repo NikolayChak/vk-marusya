@@ -1,0 +1,31 @@
+.card-form__item {
+  padding: 25px;
+  background-color: #000;
+  text-align: center;
+  font-weight: 700;
+}
+
+.cards-list__genre {
+  width: 100%;
+  max-width: 290px;
+  border-radius: 24px;
+}
+
+.cards-list__link .card-form__genre {
+  transition: border-color 0.2s ease-in-out;
+}
+
+.cards-list__link:hover .card-form__genre,
+.cards-list__link:focus-visible .card-form__genre {
+  border-color: var(--color-white);
+}
+
+.card-form__genre {
+  border-radius: 24px;
+}
+
+.card-form__genre .card-list__img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 220px;
+}

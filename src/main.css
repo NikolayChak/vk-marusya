@@ -1,0 +1,245 @@
+@font-face {
+  font-family: 'Play';
+  src:
+    local('Play'),
+    url('./assets/fonts/Play-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Play-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: regular;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Play';
+  src:
+    local('Play'),
+    url('./assets/fonts/Play-Bold.woff2') format('woff2'),
+    url('./assets/fonts/Play-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: bold;
+  font-display: swap;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#root {
+  --color-white: #fff;
+  --color-pink: rgba(220, 93, 252, 1);
+  --color-green: rgba(48, 142, 33, 1);
+  --color-red-error: rgba(255, 117, 117, 1);
+  --color-grey: rgba(57, 59, 60, 1);
+  --color-grey-tranp: rgba(255, 255, 255, 0.5);
+  --color-grey-disabled: #90949d;
+  --color-blue: rgba(103, 165, 235, 1);
+  --color-blue-disabled: rgba(69, 82, 110, 1);
+  --color-purple: rgba(106, 93, 194, 1);
+  --color-purple-focus: rgba(180, 169, 255, 1);
+  --transparent: rgba(255, 255, 255, 0);
+  --color-gold: #a59400;
+  --color-red: #c82020;
+  --color-lgrey: #777777;
+}
+
+body {
+  font-family: 'Play', sans-serif;
+  font-weight: 400;
+  color: var(--color-white);
+  background: linear-gradient(180deg, #000000 0%, rgba(39, 36, 36, 0.7) 100%);
+  background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+button,
+input,
+fieldset,
+form {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  font-family: 'Play', sans-serif;
+}
+
+button:active,
+button:hover,
+button:focus,
+button:focus-visible {
+  outline: none;
+  cursor: pointer;
+}
+
+a:active,
+a:focus,
+a:hover,
+a:focus-visible {
+  outline: none;
+  cursor: pointer;
+}
+
+input:active,
+input:focus,
+input:hover,
+input:focus-visible {
+  outline: none;
+  cursor: pointer;
+  outline: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.card-link {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--color-white);
+}
+
+.title__midi {
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 2.3px;
+}
+
+.cards-list {
+  display: flex;
+  justify-content: flex-start;
+  row-gap: 64px;
+  column-gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cards-list__item {
+  position: relative;
+}
+
+.card-form {
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0px 0px 80px 0px rgba(255, 255, 255, 0.33);
+}
+
+.card-list__img {
+  display: block;
+}
+
+.card-form__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.section-pd {
+  padding-top: 63px;
+  padding-bottom: 120px;
+}
+
+.title--mb {
+  margin-bottom: 64px;
+}
+
+.elements {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.elements--transp {
+  color: var(--color-grey-tranp);
+}
+
+.elements--white {
+  color: var(--color-white);
+}
+
+.error {
+  color: var(--color-red-error);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-pd {
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .title__midi {
+    letter-spacing: 1.2px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .title--mb {
+    margin-bottom: 40px;
+  }
+
+  .cards-list {
+    row-gap: 25px;
+  }
+
+  .card-list__img {
+    width: 100%;
+  }
+}

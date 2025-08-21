@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Play';
+  src:
+    url('https://db.onlinewebfonts.com/t/6a757a6c72828302aa434cfa16a8d910.woff2')
+      format('woff2'),
+    url('https://db.onlinewebfonts.com/t/6a757a6c72828302aa434cfa16a8d910.woff')
+      format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Play';
+  src:
+    url('https://db.onlinewebfonts.com/t/798dabdcec274cf0565568e6cf5e8be9.woff2')
+      format('woff2'),
+    url('https://db.onlinewebfonts.com/t/798dabdcec274cf0565568e6cf5e8be9.woff')
+      format('woff');
+  font-weight: 700;
+  font-style: normal;
+}

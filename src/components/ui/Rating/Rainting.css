@@ -1,0 +1,63 @@
+.range {
+  position: relative;
+  color: var(--color-white);
+  font-weight: 700;
+  border-radius: 16px;
+}
+
+.range::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  background-repeat: no-repeat;
+  background-image: url('@/assets/img/star.svg');
+  transform: translateY(-50%);
+}
+
+.range--big {
+  padding: 4px 13px 4px 32px;
+}
+
+.range--big::before {
+  width: 16px;
+  height: 16px;
+  left: 12px;
+  background-size: 16px 16px;
+}
+
+.range--mini {
+  height: fit-content;
+  padding: 2px 9px 2px 20px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.range--mini::before {
+  background-size: 10px 10px;
+  width: 10px;
+  height: 10px;
+  left: 7px;
+}
+
+.range--lgrey {
+  background-color: var(--color-lgrey);
+}
+
+.range--green {
+  background-color: var(--color-green);
+}
+
+.range--red {
+  background-color: var(--color-red);
+}
+
+.range--gold {
+  background-color: var(--color-gold);
+}
+
+@media (max-width: 575px) {
+  .range--big {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

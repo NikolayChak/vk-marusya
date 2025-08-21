@@ -1,0 +1,58 @@
+.account {
+  padding-top: 61px;
+}
+
+.account__title {
+  margin-bottom: 74px;
+}
+
+.account__links {
+  display: flex;
+  column-gap: 64px;
+}
+
+.account__links .item {
+  padding-left: 32px;
+}
+
+.item svg {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.account .btn {
+  padding: 16px 52px;
+}
+
+@media (max-width: 768px) {
+  .account .cards-list {
+    height: 336px;
+    flex-wrap: nowrap;
+  }
+
+  .account .cards-list__item {
+    flex-shrink: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .account {
+    padding-bottom: 62px;
+    padding-top: 26px;
+  }
+
+  .account__links {
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  .account__title {
+    margin-bottom: 49px;
+  }
+
+  .account .btn {
+    width: 100%;
+  }
+}

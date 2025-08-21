@@ -1,0 +1,15 @@
+@media (max-width: 992px) {
+  .genres .cards-list {
+    justify-content: space-around;
+  }
+
+  .cards-list__genre {
+    max-width: 245px;
+  }
+}
+
+@media (max-width: 575px) {
+  .cards-list__genre {
+    max-width: 100%;
+  }
+}

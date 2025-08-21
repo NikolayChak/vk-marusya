@@ -1,0 +1,33 @@
+.item {
+  position: relative;
+  color: var(--color-white);
+  font-size: 24px;
+  line-height: 32px;
+  outline-offset: 10px;
+  transition: outline 0.3s ease-in-out;
+}
+
+.item::after {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  right: 0;
+  width: 0%;
+  height: 1.5px;
+  margin: 0 auto;
+  background-color: var(--color-pink);
+  transition: width 0.3s ease-in-out;
+}
+
+.item--active::after {
+  width: 100%;
+}
+
+.item:hover:not(:focus-visible):after {
+  width: 100%;
+}
+
+.item:focus-visible {
+  outline: 1px solid var(--color-purple-focus);
+}

@@ -1,0 +1,32 @@
+.account .cards-container,
+.topfilms .cards-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 73px 80px;
+}
+
+.topfilms .cards-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+@media (max-width: 992px) {
+  .account .cards-container,
+  .topfilms .cards-container {
+    padding: 73px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .topfilms .cards-container {
+    padding: 90px 20px;
+    overflow: scroll;
+  }
+
+  .account .cards-container {
+    padding: 90px 20px;
+    overflow: scroll;
+    margin-top: -43px;
+  }
+}
